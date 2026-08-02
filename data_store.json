@@ -1,0 +1,519 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "name": "Dr. Arthur Pendelton (Admin)",
+      "email": "admin@medicare360.com",
+      "role": "ADMIN",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-recep",
+      "name": "Sarah Jenkins",
+      "email": "receptionist@medicare360.com",
+      "role": "RECEPTIONIST",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-doc1",
+      "name": "Dr. Robert Chen",
+      "email": "robert.chen@medicare360.com",
+      "role": "DOCTOR",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-doc2",
+      "name": "Dr. Elena Rostova",
+      "email": "elena.rostova@medicare360.com",
+      "role": "DOCTOR",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-doc3",
+      "name": "Dr. Marcus Vance",
+      "email": "marcus.vance@medicare360.com",
+      "role": "DOCTOR",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-pat1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "PATIENT",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-pat2",
+      "name": "Emily Watson",
+      "email": "emily.watson@example.com",
+      "role": "PATIENT",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "u-pat3",
+      "name": "Michael Sterling",
+      "email": "michael.sterling@example.com",
+      "role": "PATIENT",
+      "createdAt": "2026-08-02T10:26:53.104Z"
+    }
+  ],
+  "passwords": {
+    "u-admin": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-recep": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-doc1": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-doc2": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-doc3": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-pat1": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-pat2": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO",
+    "u-pat3": "$2b$10$XA0/4q2c.zWvxp9FGorDMOpunIeTd3MD0BFW4BwAezK.a41VuGsaO"
+  },
+  "patients": [
+    {
+      "id": "pat-1",
+      "userId": "u-pat1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1 (555) 111-2222",
+      "dateOfBirth": "1988-05-14",
+      "gender": "MALE",
+      "bloodGroup": "O+",
+      "height": 178,
+      "weight": 76,
+      "allergies": "Penicillin, Shellfish",
+      "existingDiseases": "Mild Hypertension",
+      "medicalConditions": "Monitored for elevated blood pressure during stress.",
+      "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "pat-2",
+      "userId": "u-pat2",
+      "name": "Emily Watson",
+      "email": "emily.watson@example.com",
+      "phone": "+1 (555) 333-4444",
+      "dateOfBirth": "1993-11-20",
+      "gender": "FEMALE",
+      "bloodGroup": "A+",
+      "height": 165,
+      "weight": 58,
+      "allergies": "Dust, Latex",
+      "existingDiseases": "Asthma",
+      "medicalConditions": "Occasional bronchospasm during seasonal changes.",
+      "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "pat-3",
+      "userId": "u-pat3",
+      "name": "Michael Sterling",
+      "email": "michael.sterling@example.com",
+      "phone": "+1 (555) 777-8888",
+      "dateOfBirth": "1982-03-09",
+      "gender": "MALE",
+      "bloodGroup": "B+",
+      "height": 182,
+      "weight": 84,
+      "allergies": "None",
+      "existingDiseases": "Type 2 Diabetes",
+      "medicalConditions": "Diet-controlled diabetes."
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc-1",
+      "userId": "u-doc1",
+      "name": "Dr. Robert Chen",
+      "specialization": "Senior Cardiologist",
+      "departmentId": "dept-1",
+      "departmentName": "Cardiology",
+      "consultationFee": 150,
+      "phone": "+1 (555) 234-5678",
+      "qualification": "MD, FACC - Harvard Medical School",
+      "experience": 14,
+      "available": true,
+      "availableFrom": "09:00",
+      "availableTo": "17:00",
+      "profileImage": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "doc-2",
+      "userId": "u-doc2",
+      "name": "Dr. Elena Rostova",
+      "specialization": "Chief Neurologist",
+      "departmentId": "dept-2",
+      "departmentName": "Neurology",
+      "consultationFee": 180,
+      "phone": "+1 (555) 345-6789",
+      "qualification": "MD, PhD Neurological Sciences",
+      "experience": 11,
+      "available": true,
+      "availableFrom": "09:30",
+      "availableTo": "16:30",
+      "profileImage": "https://images.unsplash.com/photo-1594824813566-88855ce78d80?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "doc-3",
+      "userId": "u-doc3",
+      "name": "Dr. Marcus Vance",
+      "specialization": "Orthopedic Surgeon",
+      "departmentId": "dept-3",
+      "departmentName": "Orthopedics",
+      "consultationFee": 160,
+      "phone": "+1 (555) 456-7890",
+      "qualification": "MS Orthopedics, Fellowship Sports Injury",
+      "experience": 9,
+      "available": true,
+      "availableFrom": "10:00",
+      "availableTo": "18:00",
+      "profileImage": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept-1",
+      "name": "Cardiology",
+      "description": "Comprehensive cardiovascular diagnosis, heart care, and surgery.",
+      "status": "ACTIVE",
+      "icon": "Heart"
+    },
+    {
+      "id": "dept-2",
+      "name": "Neurology",
+      "description": "Advanced brain, spine, and neurological disorders treatment.",
+      "status": "ACTIVE",
+      "icon": "Brain"
+    },
+    {
+      "id": "dept-3",
+      "name": "Orthopedics",
+      "description": "Bone, joint, sports medicine, and reconstructive surgery.",
+      "status": "ACTIVE",
+      "icon": "Bone"
+    },
+    {
+      "id": "dept-4",
+      "name": "Pediatrics",
+      "description": "Specialized medical care for infants, children, and adolescents.",
+      "status": "ACTIVE",
+      "icon": "Baby"
+    },
+    {
+      "id": "dept-5",
+      "name": "General Medicine",
+      "description": "Primary healthcare, routine physicals, and chronic disease management.",
+      "status": "ACTIVE",
+      "icon": "Stethoscope"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt-1",
+      "patientId": "pat-2",
+      "patientName": "Emily Watson",
+      "patientPhone": "+1 (555) 333-4444",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "doctorSpecialization": "Senior Cardiologist",
+      "departmentId": "dept-1",
+      "departmentName": "Cardiology",
+      "appointmentDate": "2026-08-02",
+      "appointmentTime": "09:00",
+      "tokenNumber": 1,
+      "status": "COMPLETED",
+      "reason": "Routine ECG checkup and palpitations follow-up",
+      "consultationFee": 150,
+      "createdAt": "2026-08-02T06:26:53.104Z",
+      "updatedAt": "2026-08-02T08:26:53.104Z"
+    },
+    {
+      "id": "apt-2",
+      "patientId": "pat-3",
+      "patientName": "Michael Sterling",
+      "patientPhone": "+1 (555) 777-8888",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "doctorSpecialization": "Senior Cardiologist",
+      "departmentId": "dept-1",
+      "departmentName": "Cardiology",
+      "appointmentDate": "2026-08-02",
+      "appointmentTime": "09:30",
+      "tokenNumber": 2,
+      "status": "IN_PROGRESS",
+      "reason": "Chest tightness after exertion",
+      "consultationFee": 150,
+      "createdAt": "2026-08-02T07:26:53.104Z",
+      "updatedAt": "2026-08-02T10:26:53.104Z"
+    },
+    {
+      "id": "apt-3",
+      "patientId": "pat-1",
+      "patientName": "John Doe",
+      "patientPhone": "+1 (555) 111-2222",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "doctorSpecialization": "Senior Cardiologist",
+      "departmentId": "dept-1",
+      "departmentName": "Cardiology",
+      "appointmentDate": "2026-08-02",
+      "appointmentTime": "10:00",
+      "tokenNumber": 3,
+      "status": "APPROVED",
+      "reason": "High blood pressure consultation and lipid profile review",
+      "consultationFee": 150,
+      "createdAt": "2026-08-02T08:26:53.104Z",
+      "updatedAt": "2026-08-02T08:26:53.104Z"
+    }
+  ],
+  "medicalRecords": [
+    {
+      "id": "medrec-1",
+      "patientId": "pat-2",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "appointmentId": "apt-1",
+      "appointmentDate": "2026-08-02",
+      "symptoms": "Mild shortness of breath, occasional palpitations in the evening.",
+      "diagnosis": "Sinus arrhythmia with normal cardiac enzyme profile.",
+      "notes": "Advised lifestyle modification, reduction in caffeine intake, 30 min daily walking.",
+      "vitals": {
+        "bloodPressure": "122/80 mmHg",
+        "temperature": "98.6 °F",
+        "pulseRate": "72 bpm",
+        "weight": "58 kg"
+      },
+      "createdAt": "2026-08-02T08:26:53.104Z",
+      "updatedAt": "2026-08-02T08:26:53.104Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "presc-1",
+      "medicalRecordId": "medrec-1",
+      "patientId": "pat-2",
+      "patientName": "Emily Watson",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "doctorSpecialization": "Senior Cardiologist",
+      "appointmentId": "apt-1",
+      "date": "2026-08-02",
+      "diagnosis": "Sinus arrhythmia with normal cardiac enzyme profile.",
+      "medicines": [
+        {
+          "medicineName": "Metoprolol Succinate",
+          "dosage": "25 mg",
+          "frequency": "1-0-0 (Morning after breakfast)",
+          "duration": "14 Days",
+          "instructions": "Take with plenty of water. Do not skip doses."
+        },
+        {
+          "medicineName": "Magnesium Supplement",
+          "dosage": "250 mg",
+          "frequency": "0-0-1 (At night before bed)",
+          "duration": "30 Days",
+          "instructions": "Take after dinner."
+        }
+      ],
+      "additionalNotes": "Follow up in 2 weeks with repeat Holter monitor readings if symptoms persist.",
+      "createdAt": "2026-08-02T08:26:53.104Z"
+    }
+  ],
+  "labTests": [
+    {
+      "id": "lab-1",
+      "patientId": "pat-2",
+      "patientName": "Emily Watson",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "appointmentId": "apt-1",
+      "testName": "Lipid Profile & Serum Electrolytes",
+      "instructions": "12-hour overnight fasting required.",
+      "result": "Total Cholesterol: 185 mg/dL (Normal), Potassium: 4.2 mEq/L",
+      "reportFileName": "LabReport_EmilyWatson_Cardio.pdf",
+      "status": "COMPLETED",
+      "createdAt": "2026-08-02T05:26:53.104Z",
+      "completedAt": "2026-08-02T07:26:53.105Z"
+    },
+    {
+      "id": "lab-2",
+      "patientId": "pat-1",
+      "patientName": "John Doe",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Robert Chen",
+      "appointmentId": "apt-3",
+      "testName": "Echocardiogram (2D Echo) & High-Sensitivity CRP",
+      "instructions": "Standard cardiac baseline assessment.",
+      "status": "REQUESTED",
+      "createdAt": "2026-08-02T09:26:53.105Z"
+    }
+  ],
+  "bills": [
+    {
+      "id": "bill-1",
+      "patientId": "pat-2",
+      "patientName": "Emily Watson",
+      "patientEmail": "emily.watson@example.com",
+      "appointmentId": "apt-1",
+      "consultationFee": 150,
+      "medicineCharges": 45,
+      "labCharges": 80,
+      "roomCharges": 0,
+      "serviceCharges": 15,
+      "gst": 20,
+      "discount": 10,
+      "totalAmount": 300,
+      "status": "PAID",
+      "createdAt": "2026-08-02T08:26:53.105Z",
+      "paidAt": "2026-08-02T09:26:53.105Z",
+      "transactionId": "PAY_RZP_994827101",
+      "paymentMethod": "RAZORPAY_UPI"
+    },
+    {
+      "id": "bill-2",
+      "patientId": "pat-1",
+      "patientName": "John Doe",
+      "patientEmail": "john.doe@example.com",
+      "appointmentId": "apt-3",
+      "consultationFee": 150,
+      "medicineCharges": 0,
+      "labCharges": 120,
+      "roomCharges": 0,
+      "serviceCharges": 20,
+      "gst": 25,
+      "discount": 0,
+      "totalAmount": 315,
+      "status": "PENDING",
+      "createdAt": "2026-08-02T09:26:53.105Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1",
+      "billId": "bill-1",
+      "patientId": "pat-2",
+      "amount": 300,
+      "paymentMethod": "RAZORPAY_UPI",
+      "transactionId": "PAY_RZP_994827101",
+      "status": "SUCCESS",
+      "paymentDate": "2026-08-02T09:26:53.105Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "u-pat1",
+      "title": "Appointment Confirmed & Token Generated",
+      "message": "Your appointment with Dr. Robert Chen is confirmed for today. Your Token Number is #3.",
+      "type": "APPOINTMENT",
+      "isRead": false,
+      "createdAt": "2026-08-02T08:26:53.105Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "u-pat2",
+      "title": "New Prescription Available",
+      "message": "Dr. Robert Chen issued a prescription for your consultation.",
+      "type": "PRESCRIPTION",
+      "isRead": true,
+      "createdAt": "2026-08-02T08:26:53.105Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1785666469408",
+      "userId": "u-doc1",
+      "userName": "Dr. Robert Chen",
+      "userRole": "DOCTOR",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-doc1",
+      "timestamp": "2026-08-02T10:27:49.408Z",
+      "details": "DOCTOR Dr. Robert Chen logged in"
+    },
+    {
+      "id": "log-1785666460290",
+      "userId": "u-recep",
+      "userName": "Sarah Jenkins",
+      "userRole": "RECEPTIONIST",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-recep",
+      "timestamp": "2026-08-02T10:27:40.290Z",
+      "details": "RECEPTIONIST Sarah Jenkins logged in"
+    },
+    {
+      "id": "log-1785666451344",
+      "userId": "u-pat1",
+      "userName": "John Doe",
+      "userRole": "PATIENT",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-pat1",
+      "timestamp": "2026-08-02T10:27:31.344Z",
+      "details": "PATIENT John Doe logged in"
+    },
+    {
+      "id": "log-1785666436291",
+      "userId": "u-pat1",
+      "userName": "John Doe",
+      "userRole": "PATIENT",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-pat1",
+      "timestamp": "2026-08-02T10:27:16.291Z",
+      "details": "PATIENT John Doe logged in"
+    },
+    {
+      "id": "log-1785666431539",
+      "userId": "u-doc1",
+      "userName": "Dr. Robert Chen",
+      "userRole": "DOCTOR",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-doc1",
+      "timestamp": "2026-08-02T10:27:11.539Z",
+      "details": "DOCTOR Dr. Robert Chen logged in"
+    },
+    {
+      "id": "log-1785666422011",
+      "userId": "u-pat1",
+      "userName": "John Doe",
+      "userRole": "PATIENT",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-pat1",
+      "timestamp": "2026-08-02T10:27:02.011Z",
+      "details": "PATIENT John Doe logged in"
+    },
+    {
+      "id": "log-1785666413345",
+      "userId": "u-doc1",
+      "userName": "Dr. Robert Chen",
+      "userRole": "DOCTOR",
+      "action": "USER_LOGIN",
+      "entityType": "USER",
+      "entityId": "u-doc1",
+      "timestamp": "2026-08-02T10:26:53.345Z",
+      "details": "DOCTOR Dr. Robert Chen logged in"
+    },
+    {
+      "id": "log-1",
+      "userId": "u-recep",
+      "userName": "Sarah Jenkins",
+      "userRole": "RECEPTIONIST",
+      "action": "BOOK_APPOINTMENT",
+      "entityType": "APPOINTMENT",
+      "entityId": "apt-3",
+      "timestamp": "2026-08-02T08:26:53.105Z",
+      "details": "Booked appointment for John Doe with Dr. Robert Chen (Token #3)"
+    },
+    {
+      "id": "log-2",
+      "userId": "u-doc1",
+      "userName": "Dr. Robert Chen",
+      "userRole": "DOCTOR",
+      "action": "CALL_NEXT_PATIENT",
+      "entityType": "QUEUE",
+      "entityId": "apt-2",
+      "timestamp": "2026-08-02T09:26:53.105Z",
+      "details": "Called Token #2 (Michael Sterling) into consultation"
+    }
+  ]
+}
