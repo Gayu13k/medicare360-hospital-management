@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0A0A0A;
+    --card-dark: #121212;
+    --border-dark: rgba(255, 255, 255, 0.1);
+    --gold-accent: #C5A059;
+    --gold-light: #E5C278;
+    --gold-dark: #A4813E;
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #F5F5F5;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, .font-serif-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Common Dark Theme Helper Utility Classes */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5F5F5 0%, #C5A059 60%, #E5C278 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(197, 160, 89, 0.25);
+}
+
+.dark-card {
+  background-color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.dark-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+.dark-card-hover:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+}

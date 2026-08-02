@@ -1,0 +1,6 @@
+{
+  "name": "MediCare360",
+  "description": "Smart Hospital Management System with Live Token Queue Tracking, EMR, Billing, Prescriptions, and Role-Based Dashboards",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
